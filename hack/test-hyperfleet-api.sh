@@ -151,10 +151,9 @@ test_create_cluster() {
   local payload=$(cat <<EOF
 {
   "kind": "Cluster",
-  "id": "$TEST_CLUSTER_ID",
   "name": "$TEST_CLUSTER_ID",
   "external_id": "test-external-001",
-  "region": "us-east-1",
+  "region": "us-east-2",
   "multi_az": true,
   "provision_shard_id": "test-shard",
   "cloud_provider": "aws",
