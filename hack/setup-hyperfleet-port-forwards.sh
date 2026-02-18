@@ -140,7 +140,7 @@ main() {
   setup_port_forward "$API_SVC" 8080 8080 "Health"
   setup_port_forward "$API_SVC" 9090 9090 "Metrics"
   setup_port_forward "$SENTINEL_SVC" 8080 8081 "Sentinel Health"
-  setup_port_forward "$ADAPTER_SVC" 8080 8082 "Adapter Health"
+  setup_port_forward "$ADAPTER_SVC" 8081 8082 "Adapter Health"
 
   echo ""
   echo "Verifying connections..."
